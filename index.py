@@ -36,5 +36,16 @@ else:
 # de chaves.
 
 
+# criando programa que informa ao usuário se o número que ele digitou é positivo, negativo, ou nulo.
+
+print("Olá! digite um número e informaremos se ele é positivo, negativo ou nulo:")
+numero = int(input("digite o número:"))
+# usando if para comparar número digitado:
+if numero > 0:
+    print("O número digitado é positivo")
+elif numero < 0:
+    print("o numero digitado é negativo.")
+else:
+    print("O número que você digitou é nulo.")
 
 
