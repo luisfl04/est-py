@@ -124,6 +124,105 @@ valortotal = (qntd_pecas * valor_peca1) + (qntd_pecas2 * valor_peca2)
 
 print(f"VALOR A PAGAR = R$ {valortotal}")
 
+# Programa que imprime uma msg através da idade inserida:
+ 
+print("Digite sua idade: ")
+idade = int(input())
+
+if idade >= 0 and idade <= 12:
+    print("Idade de uma criança!")
+elif idade >= 13 and idade <= 18:
+    print("Idade de um adolecente!")
+elif idade > 18 and idade <= 65:
+    print("Idade de um adulto!")
+else:
+    print("Está na melhor idade.")
+
+
+# loop for:
+
+sabores_sorvetes = ["Maracujá" , "Morango" , "Ameixa", "Chocolate" , "Graviola"]
+# Imprimindo lista de sabores:
+for itens in sabores_sorvetes:
+    print(itens)
+
+# Loop while:
+
+Idade_instrutor = 27
+Minha_Idade = 0
+
+while Minha_Idade < Idade_instrutor:
+    Minha_Idade = Minha_Idade + 1
+    print(Minha_Idade)
+# programa que soma os números que estão sendo inseridos. Para parar a soma o usuário deve digitar 0
+
+print("Esse é um programa que soma os números que você esta inserindo.")
+print("Para finalizar a soma e obter o resultado final, basta digitar 0.")
+
+print("Digite o número:")
+numero_soma = float(input())
+
+while numero_soma != 0:
+    resultado = numero_soma + numero_soma
+    print(f"resultado da soma: {resultado}")
+    
+    print("Digite outro número para soma:")
+    numero_soma = float(input())
+
+# Funções - Criando uma função:
+
+print("Digite seu nome: ")
+nome = (input())
+
+def saudacao(nome):
+    print("Oi " + nome +"! tudo bem? Seja bem vindo!")
+
+saudacao(nome)
+# Função de soma:
+def somar(a,b):
+    return a + b
+print(somar(10,40))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+somar(10,10)
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
