@@ -124,6 +124,28 @@ valortotal = (qntd_pecas * valor_peca1) + (qntd_pecas2 * valor_peca2)
 
 print(f"VALOR A PAGAR = R$ {valortotal}")
 
+
+# Criando tipos de variáveis:
+
+# Listas:
+nomes = ["luis" , "felipe", "oliveira" , "silva", 19, 45, 34] #estilo de array.
+#  Tuplas:
+nomes = ("luis", "felipe", "oliveira" , "silva")
+# dicionario:
+nomes_e_idades = {"luis": 19, "oliveira" : 10, "silva": 13}
+
+# Mudando tipo de variáveis:
+
+# inteiro para float e vice e versa:
+n1 = 10
+print(float(n1))
+l = 3.14
+print(int(l))
+# Números em strings:
+numero = 15
+print(type(str(numero)))
+
+
 # Programa que imprime uma msg através da idade inserida:
  
 print("Digite sua idade: ")
@@ -156,6 +178,7 @@ while Minha_Idade < Idade_instrutor:
     print(Minha_Idade)
 # programa que soma os números que estão sendo inseridos. Para parar a soma o usuário deve digitar 0
 
+resultado = 0
 print("Esse é um programa que soma os números que você esta inserindo.")
 print("Para finalizar a soma e obter o resultado final, basta digitar 0.")
 
@@ -163,7 +186,7 @@ print("Digite o número:")
 numero_soma = float(input())
 
 while numero_soma != 0:
-    resultado = numero_soma + numero_soma
+    resultado = resultado + numero_soma
     print(f"resultado da soma: {resultado}")
     
     print("Digite outro número para soma:")
@@ -184,20 +207,6 @@ def somar(a,b):
 print(somar(10,40))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-somar(10,10)
 
     
     
