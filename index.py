@@ -155,7 +155,7 @@ while Minha_Idade < Idade_instrutor:
     Minha_Idade = Minha_Idade + 1
     print(Minha_Idade)
 # programa que soma os números que estão sendo inseridos. Para parar a soma o usuário deve digitar 0
-
+resultado = 0
 print("Esse é um programa que soma os números que você esta inserindo.")
 print("Para finalizar a soma e obter o resultado final, basta digitar 0.")
 
@@ -163,11 +163,13 @@ print("Digite o número:")
 numero_soma = float(input())
 
 while numero_soma != 0:
-    resultado = numero_soma + numero_soma
+    resultado = resultado + numero_soma
     print(f"resultado da soma: {resultado}")
     
     print("Digite outro número para soma:")
     numero_soma = float(input())
+
+print(f"soma finalizada. resultado final = {resultado} ")
 
 # Funções - Criando uma função:
 
@@ -183,21 +185,20 @@ def somar(a,b):
     return a + b
 print(somar(10,40))
 
+# Dando valor a um parâmetro dentro dos parênteses da função:
 
+def bem_vindo(nome, ola = "Olá, seja bem vindo!"):
+    print(ola + "prazer em te conhecer " + nome + ".")
 
+# Função de operações com parâmetros:
+def soma(nmr1,nmr2):
+    op1 = nmr1 + nmr2
+    op2 = nmr1 - nmr2
+    op3 = nmr1 * nmr2
+    op4 = nmr1 / nmr2
+    print(op1,op2,op3,op4)
+    
 
-
-
-
-
-
-
-
-
-
-
-
-somar(10,10)
 
     
     
