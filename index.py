@@ -124,6 +124,28 @@ valortotal = (qntd_pecas * valor_peca1) + (qntd_pecas2 * valor_peca2)
 
 print(f"VALOR A PAGAR = R$ {valortotal}")
 
+
+# Criando tipos de variáveis:
+
+# Listas:
+nomes = ["luis" , "felipe", "oliveira" , "silva", 19, 45, 34] #estilo de array.
+#  Tuplas:
+nomes = ("luis", "felipe", "oliveira" , "silva")
+# dicionario:
+nomes_e_idades = {"luis": 19, "oliveira" : 10, "silva": 13}
+
+# Mudando tipo de variáveis:
+
+# inteiro para float e vice e versa:
+n1 = 10
+print(float(n1))
+l = 3.14
+print(int(l))
+# Números em strings:
+numero = 15
+print(type(str(numero)))
+
+
 # Programa que imprime uma msg através da idade inserida:
  
 print("Digite sua idade: ")
@@ -155,6 +177,8 @@ while Minha_Idade < Idade_instrutor:
     Minha_Idade = Minha_Idade + 1
     print(Minha_Idade)
 # programa que soma os números que estão sendo inseridos. Para parar a soma o usuário deve digitar 0
+
+resultado = 0
 resultado = 0
 print("Esse é um programa que soma os números que você esta inserindo.")
 print("Para finalizar a soma e obter o resultado final, basta digitar 0.")
@@ -185,20 +209,21 @@ def somar(a,b):
     return a + b
 print(somar(10,40))
 
-# Dando valor a um parâmetro dentro dos parênteses da função:
 
-def bem_vindo(nome, ola = "Olá, seja bem vindo!"):
-    print(ola + "prazer em te conhecer " + nome + ".")
 
-# Função de operações com parâmetros:
-def soma(nmr1,nmr2):
-    op1 = nmr1 + nmr2
-    op2 = nmr1 - nmr2
-    op3 = nmr1 * nmr2
-    op4 = nmr1 / nmr2
-    print(op1,op2,op3,op4)
-    
 
+
+
+
+
+
+
+
+
+
+
+
+somar(10,10)
 
     
     
