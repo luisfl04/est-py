@@ -275,7 +275,113 @@ if __name__  == "__main__":   # conversão para exibir as duas funções.
 
 
 # Escreva um programa que calcule o numero de vogais em uma palavra.
-#
+print("Escreva uma vogal e veja quantas vogais ela possui")
+palavra = (input())
+
+vogais = ["a","e","i","o","u"]
+contagem = 0
+
+for letra in palavra:
+    if letra in vogais:
+        contagem = contagem + 1
+print("O número de vogais na palavra ",palavra, "é igula a ", contagem)
+
+# Invertendo Uma frase passo a passo:
+
+# Tranformando uma frase em uma lista de palavras:
+frase = "E - businnes é uma maneira de negócios relacionada com a tcnologia."
+lista_de_palavras = frase.split()
+#  invertendo a ordem das palavras:
+frase = "I am luis"
+palavras_listas = frase.split()
+palavras_invertidas = frase[::-1]
+#Juntando as palvras em uma frase invertida:
+frases_invertidas = " ".join(palavras_invertidas)
+#Função de inverter frase:
+def inverter_frase(frase): 
+    palavras = frase.split()
+    palavras_invertidas = palavras[::-1]
+    frase_invertida = " ".join(palavras_invertidas)
+    print(frase_invertida)
+
+frase_normal = (input())
+frase_invertida = inverter_frase(frase_normal)
+print(frase_invertida)
+
+# Verficando se a palavra é um palíndromo
+def palindromo():
+    print("Digite uma palavra:")
+    palavra = (input())
+    palavra_invertida = palavra[::-1]
+
+    if palavra == palavra_invertida:
+        print(palavra + " é um palíndromo!")
+    else:
+        print(palavra + " não é um palíndromo. resultado = " + palavra_invertida)
+
+# removendo um carctere de uma frase usando o método replace():
+
+def caractere():
+    print("insira uma frase:")
+    frase = (input())
+
+    print("digite o caractere a ser removido:")
+    caractere = (input())
+
+    #usando método replace para substituir "caractere" por um esaço vazio em uma string
+    Frase_sem_caractere = frase.replace(caractere, "")
+    print(Frase_sem_caractere)
+
+# Deslocando caracteres em uma frase usando a cifra de cesar:
+
+def cifra_de_cesar():
+    frase = (input("Escreva a frase:  "))
+    deslocamento = int(input("Qual o deslocamento desejado?  "))
+    frase_cifrada = "" #iniciando frase_cifrada sem valor para construir a frase letra por letra
+
+    for caractere in frase:
+        if caractere.isalpha():
+            codigo = (ord(caractere) - ord("a"))
+            novo_codigo = ( codigo + deslocamento) % 26 # uso "% 26" para que o codigo fique entre 0 e 25.
+            novo_caractere = chr(novo_codigo + ord("a"))
+            para_maiusculo = caractere.isupper()  # criando uma variável para verificar se a frase inserida esta toda em caracteres maiúsculos. 
+            if para_maiusculo:
+                caractere_maiusculo = caractere.upper()
+                frase_cifrada = frase_cifrada + caractere_maiusculo
+            else:
+                frase_cifrada = frase_cifrada + novo_caractere
+    print("a frase " + frase + " com o deslocamento usado fica = " + frase_cifrada)
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
