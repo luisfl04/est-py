@@ -203,31 +203,97 @@ nome = (input())
 def saudacao(nome):
     print("Oi " + nome +"! tudo bem? Seja bem vindo!")
 
-saudacao(nome)
+
 # Função de soma:
-def somar(a,b):
-    return a + b
-print(somar(10,40))
+def soma(nmr1,nmr2):
+    print("digite dois números para obter a sua soma: ")
+    nmr1 = int(input())
+    nmr2 = int(input())
+    op = nmr1 + nmr2
+    print(op)
 
-a
+#loop de contagem regressiva:
+def contagem_regressiva():
+    meunumero = 11
+    while meunumero > 1:
+        meunumero = meunumero - 1
+    print(meunumero)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-somar(10,10)
-
+# Soma de números pares:
+def soma_dos_pares():
+    soma = 0
+    print("Digite um número para somarmos os algarismos pares até chegar no valor informado:")
+    numero = int(input())
     
+    while numero <= 0:
+        print("Por favor, digite um número inteiro positivo.")
+    else:
+        for i in range(1, numero + 1):
+            if i % 2 == 0:
+                soma = soma + i
+
+    print(" A soma dos números pares de 1 até ", numero, "é = ", soma)
+
+def tabuada():
+
+    print("insira um numero inteiro e positivo para calcularmos a sua tabuada: ")
+    numero = int(input())
+
+    while numero <= 0 :
+        print("Número incorreto, informe um válido por favor.")
+        numero = int(input())
+    for i in range(1,11):
+        res = numero * i
+    print(f"{numero} x {i} = {res}")
+
+def fatorial():
+
+    print("Digite um número inteiro positivo para saber o seu fatorial:")
+    numero = int(input())
+
+    if numero < 0:
+        print("Não existe fatorial para números negativos")
+    elif numero == 0 :
+        print("O fatorial de 0 é 1")
+    else:
+        for i in range(1, numero + 1):
+            fatorial = fatorial * 1 
+            print(fatorial)    
+    
+# Chamando uma função filha dentro de uma função pai:
+
+def Main():
+    print("eu sou a função pai.")
+
+    def filho():
+        print("Eu sou a função filho.")
+    
+    filho()
+
+if __name__  == "__main__":   # conversão para exibir as duas funções.
+    Main()
+
+
+# Escreva um programa que calcule o numero de vogais em uma palavra.
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
