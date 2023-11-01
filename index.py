@@ -256,9 +256,10 @@ def fatorial():
     elif numero == 0 :
         print("O fatorial de 0 é 1")
     else:
-        for i in range(1, numero + 1):
-            fatorial = fatorial * 1 
-            print(fatorial)    
+        fatorial = 1
+        for i in range(1,numero + 1):
+            fatorial = fatorial * i
+            print(fatorial)
     
 # Chamando uma função filha dentro de uma função pai:
 
