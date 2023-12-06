@@ -353,6 +353,25 @@ def cifra_de_cesar():
                 frase_cifrada = frase_cifrada + novo_caractere
     print("a frase " + frase + " com o deslocamento usado fica = " + frase_cifrada)
 
+# Caluclando média com P.O.O:
+
+class Disciplina:
+    def __init__(self, nomeDiscp, notas):
+        self.nomeDiscp = nomeDiscp
+        self.notas = notas
+    def calcularmedia(self):
+        return (self.notas[0] + self.notas[1]) / 2
+    def exibirsituacao(self):
+        media = self.calcularmedia()
+        if media > 6:
+            return "Avançado!"
+        elif media >= 3:
+            return "Recuperação!"
+        else:
+            return "Reprovado"   
+
+
+
 
     
 
